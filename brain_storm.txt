@@ -1,0 +1,12 @@
+# cv_single = pd.DataFrame(X.toarray())
+# cv_single
+
+# after_stemmed = stemming(df_smaple_test)
+# after_stemmed
+
+# join_back = " ".join(after_stemmed)
+# join_back
+
+# stemming(df_smaple_test)
+
+# join_back(df_smaple_test)
