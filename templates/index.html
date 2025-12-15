@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Amazon Review Analysis</h2>
+
+<form action="/" method="POST">
+    <input type="text" name="review" placeholder="Enter review" style="width:300px;">
+    <button type="submit">Predict</button>
+</form>
+
+<!-- {% if prediction %}
+    <h3>Prediction: {{ prediction }}</h3>
+{% endif %} -->
+
+{% if msg %}
+    <h3>Prediction: {{ msg }}</h3>
+{% endif %}
+
+</body>
+</html>
