@@ -38,7 +38,7 @@ def preprocessing(random_input):
     stemmed_words = []
     for j in filter_without_stopwords:
         stemmed_words.append(p_stemmer.stem(j))
-        
+
     # joining back 
     joined_word = " ".join(stemmed_words)
 
@@ -48,11 +48,28 @@ def preprocessing(random_input):
 def home():
     msg = None
     if request.method == 'POST':
+
         review = request.form['review']
+        label = ""
+
         clean = preprocessing(review)
         vectorize = vectorizer.transform([clean]).toarray()
-        prediction = model.predict(vectorize)[0]
-        msg = f"You entered: {prediction}"
+        prediction = int(model.predict(vectorize)[0])
+        confidence = model.predict_proba(vectorize)[0, 1]
+        confidence_percentage = round(float(confidence * 100))
+
+        if prediction == 1:
+            label = "Customer is Positive :) about his/her review !"
+        elif prediction == 0:
+            label = "Customer is Negative :( about his/her review !"
+
+        msg = {
+            'prediction': prediction,
+            'label': label,
+            'confidence': confidence_percentage,
+            'model_info': str(model)
+        }
+
     return render_template('index.html', msg=msg)
 
 if __name__ == "__main__":
