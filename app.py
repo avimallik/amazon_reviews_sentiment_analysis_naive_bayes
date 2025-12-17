@@ -1,16 +1,16 @@
 import pickle
 import re
 from nltk.corpus import stopwords
-from nltk.stem import PorterStemmer
+from nltk.stem import PorterStemmer, WordNetLemmatizer
 from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
-with open('multinomial_naive_bayes_model.pkl', 'rb') as f:
+with open('bernoulli_naive_bayes_model.pkl', 'rb') as f:
     model = pickle.load(f)
     print(model)
 
-with open('count_vectorize_vectorizer.pkl', 'rb') as f:
+with open('tfidf_vectorizer.pkl', 'rb') as f:
     vectorizer = pickle.load(f)
     print(vectorizer)
 
@@ -34,13 +34,13 @@ def preprocessing(random_input):
             filter_without_stopwords.append(i)
 
     # stemming 
-    p_stemmer = PorterStemmer()
-    stemmed_words = []
+    lemmatize = WordNetLemmatizer()
+    leammatized_words = []
     for j in filter_without_stopwords:
-        stemmed_words.append(p_stemmer.stem(j))
+        leammatized_words.append(lemmatize.lemmatize(j))
 
     # joining back 
-    joined_word = " ".join(stemmed_words)
+    joined_word = " ".join(leammatized_words)
 
     return joined_word
 
@@ -64,6 +64,7 @@ def home():
             label = "Customer is Negative :( about his/her review !"
 
         msg = {
+            'review': review,
             'prediction': prediction,
             'label': label,
             'confidence': confidence_percentage,

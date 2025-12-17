@@ -48,6 +48,7 @@
 
     {% if msg %}
         <div class="alert alert-info mt-4">
+            <em>"{{ msg['review'] }}" </em> <br><br>
             <strong>Prediction :</strong> {{ msg['label'] }} <br>
             <strong>Confidence :</strong> {{ msg['confidence'] }}% <br>
             <strong>Model :</strong> {{ msg['model_info'] }}
