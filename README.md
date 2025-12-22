@@ -27,6 +27,15 @@ Three variations of Naive Bayes were tested: **Gaussian**, **Multinomial**, and 
 ### 7. Confusion Matrix
 Confusion matrices were generated for each model to visualize performance, showing the true vs. predicted counts for both classes.
 
+**Bernoulli Naive Bayes Results:**
+![Bernoulli NB](https://github.com/avimallik/amazon_reviews_sentiment_analysis_naive_bayes/blob/master/confusion_matrix_gaussian_nb.png?raw=true)
+
+**Bernoulli Naive Bayes Results:**
+![Bernoulli NB](https://github.com/avimallik/amazon_reviews_sentiment_analysis_naive_bayes/blob/master/confusion_matrix_bernoulli_nb.png?raw=true)
+
+**Multinomial Naive Bayes Results:**
+![Multinomial NB](https://github.com/avimallik/amazon_reviews_sentiment_analysis_naive_bayes/blob/master/confusion_matrix_multinomial_nb.png?raw=true)
+
 ### 8. Classification Report
 A detailed classification report provides metrics such as **Precision**, **Recall**, and **F1-score**, highlighting the model's high performance in identifying positive reviews.
 
@@ -40,6 +49,11 @@ The trained **Bernoulli Naive Bayes** model and the **TF-IDF Vectorizer** are sa
 The project is deployed as a web application using the **Flask** framework.
 * The app provides a user interface (`index.html`) where users can submit reviews.
 * It processes the input, predicts sentiment, and displays the result along with the prediction confidence percentage.
+
+**User Interface:**
+![UI_1](https://github.com/avimallik/amazon_reviews_sentiment_analysis_naive_bayes/blob/master/screenshoot_app.PNG?raw=true)
+
+![UI_2](https://github.com/avimallik/amazon_reviews_sentiment_analysis_naive_bayes/blob/master/screenshoot_app_2.PNG?raw=true)
 
 ## How to Run
 1. Install dependencies: `pip install flask pandas nltk scikit-learn seaborn matplotlib`.
