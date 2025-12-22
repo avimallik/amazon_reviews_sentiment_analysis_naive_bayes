@@ -49,6 +49,7 @@ The trained **Bernoulli Naive Bayes** model and the **TF-IDF Vectorizer** are sa
 The project is deployed as a web application using the **Flask** framework.
 * The app provides a user interface (`index.html`) where users can submit reviews.
 * It processes the input, predicts sentiment, and displays the result along with the prediction confidence percentage. <br>
+
 ![Dashboard] (https://github.com/avimallik/amazon_reviews_sentiment_analysis_naive_bayes/blob/master/screenshoot_app.PNG?raw=true) 
 
 ![Dashboard](https://github.com/avimallik/amazon_reviews_sentiment_analysis_naive_bayes/blob/master/screenshoot_app_2.PNG?raw=true)
