@@ -51,9 +51,7 @@ The project is deployed as a web application using the **Flask** framework.
 * It processes the input, predicts sentiment, and displays the result along with the prediction confidence percentage.
 
 **User Interface:**
-![UI_1](https://github.com/avimallik/amazon_reviews_sentiment_analysis_naive_bayes/blob/master/screenshoot_app.PNG?raw=true)
-
-![UI_2](https://github.com/avimallik/amazon_reviews_sentiment_analysis_naive_bayes/blob/master/screenshoot_app_2.PNG?raw=true)
+![UI_1](https://github.com/avimallik/amazon_reviews_sentiment_analysis_naive_bayes/blob/master/screenshoot_app.PNG?raw=true) (https://github.com/avimallik/amazon_reviews_sentiment_analysis_naive_bayes/blob/master/screenshoot_app_2.PNG?raw=true)
 
 ## How to Run
 1. Install dependencies: `pip install flask pandas nltk scikit-learn seaborn matplotlib`.
