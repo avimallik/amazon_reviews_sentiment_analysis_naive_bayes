@@ -36,6 +36,12 @@ Confusion matrices were generated for each model to visualize performance, showi
 **Multinomial Naive Bayes Results:**
 ![Multinomial NB](https://github.com/avimallik/amazon_reviews_sentiment_analysis_naive_bayes/blob/master/confusion_matrix_multinomial_nb.png?raw=true)
 
+<p align="center">
+    <img src="https://github.com/avimallik/amazon_reviews_sentiment_analysis_naive_bayes/blob/master/confusion_matrix_gaussian_nb.png?raw=true" width="45%" />
+    <img src="https://github.com/avimallik/amazon_reviews_sentiment_analysis_naive_bayes/blob/master/confusion_matrix_bernoulli_nb.png?raw=true" width="45%" />
+    <img src="https://github.com/avimallik/amazon_reviews_sentiment_analysis_naive_bayes/blob/master/confusion_matrix_multinomial_nb.png?raw=true" width="45%" />
+</p>
+
 ### 8. Classification Report
 A detailed classification report provides metrics such as **Precision**, **Recall**, and **F1-score**, highlighting the model's high performance in identifying positive reviews.
 
@@ -51,8 +57,8 @@ The project is deployed as a web application using the **Flask** framework.
 * It processes the input, predicts sentiment, and displays the result along with the prediction confidence percentage. <br>
 
 <p align="center">
-  <img src="https://github.com/avimallik/amazon_reviews_sentiment_analysis_naive_bayes/blob/master/confusion_matrix_bernoulli_nb.png?raw=true" width="45%" />
-  <img src="https://github.com/avimallik/amazon_reviews_sentiment_analysis_naive_bayes/blob/master/confusion_matrix_multinomial_nb.png?raw=true" width="45%" />
+  <img src="https://github.com/avimallik/amazon_reviews_sentiment_analysis_naive_bayes/blob/master/screenshoot_app.PNG?raw=true" width="45%" />
+  <img src="https://github.com/avimallik/amazon_reviews_sentiment_analysis_naive_bayes/blob/master/screenshoot_app_2.PNG?raw=true" width="45%" />
 </p>
 
 ## How to Run
