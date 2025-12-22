@@ -27,15 +27,6 @@ Three variations of Naive Bayes were tested: **Gaussian**, **Multinomial**, and 
 ### 7. Confusion Matrix
 Confusion matrices were generated for each model to visualize performance, showing the true vs. predicted counts for both classes.
 
-**Bernoulli Naive Bayes Results:**
-![Bernoulli NB](https://github.com/avimallik/amazon_reviews_sentiment_analysis_naive_bayes/blob/master/confusion_matrix_gaussian_nb.png?raw=true)
-
-**Bernoulli Naive Bayes Results:**
-![Bernoulli NB](https://github.com/avimallik/amazon_reviews_sentiment_analysis_naive_bayes/blob/master/confusion_matrix_bernoulli_nb.png?raw=true)
-
-**Multinomial Naive Bayes Results:**
-![Multinomial NB](https://github.com/avimallik/amazon_reviews_sentiment_analysis_naive_bayes/blob/master/confusion_matrix_multinomial_nb.png?raw=true)
-
 <p align="center">
     <img src="https://github.com/avimallik/amazon_reviews_sentiment_analysis_naive_bayes/blob/master/confusion_matrix_gaussian_nb.png?raw=true" width="45%" />
     <img src="https://github.com/avimallik/amazon_reviews_sentiment_analysis_naive_bayes/blob/master/confusion_matrix_bernoulli_nb.png?raw=true" width="45%" />
